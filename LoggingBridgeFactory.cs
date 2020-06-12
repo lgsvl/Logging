@@ -6,19 +6,17 @@
  */
 
 using System;
-using NetTopologySuite.Geometries.Utilities;
 using Newtonsoft.Json;
 using Simulator.Bridge.Data;
 using UnityEngine;
 
 namespace Simulator.Bridge
 {
+    // name should match bridge plugin name (main C# file, and folder name under External/Bridges folder)
+    // this will also be used to display name in UI
+    [BridgeName("LoggingBridge")]
     public class LoggingBridgeFactory : IBridgeFactory
     {
-        // unname should match bridge plugin name (main C# file, and folder name under External/Bridges folder)
-        // this will also be used to display name in UI
-        public string Name => "LoggingBridge";
-
         // called to create unique instance associated with vehicle
         public IBridgeInstance CreateInstance() => new LoggingBridgeInstance();
 
