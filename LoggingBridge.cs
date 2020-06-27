@@ -36,7 +36,7 @@ namespace Simulator.Bridge
 
             try
             {
-                var path = Path.Combine(Application.persistentDataPath, connection + ".txt.gz");
+                var path = Path.Combine(Simulator.Web.Config.PersistentDataPath, connection + ".txt.gz");
                 File = new GZipStream(new FileStream(path, FileMode.Create), CompressionMode.Compress, false);
             }
             catch (Exception ex)
