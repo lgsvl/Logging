@@ -14,7 +14,7 @@ namespace Simulator.Bridge
 {
     // name should match bridge plugin name (main C# file, and folder name under External/Bridges folder)
     // this will also be used to display name in UI
-    [BridgeName("LoggingBridge")]
+    [BridgeName("Logging")]
     public class LoggingBridgeFactory : IBridgeFactory
     {
         // called to create unique instance associated with vehicle
