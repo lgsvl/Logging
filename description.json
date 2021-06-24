@@ -1,6 +1,6 @@
 {
   "id": "04c72be6-3962-4a67-9efb-8731f49f4c5f",
-  "name": "LoggingBridge",
+  "name": "Logging",
   "accessType": "public",
   "description": "This bridge takes all published data and writes it into text file. This is only for debugging purposes.",
   "licenseName": "LG Content",
