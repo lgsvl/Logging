@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 LG Electronics, Inc.
+ * Copyright (c) 2020-2021 LG Electronics, Inc.
  *
  * This software contains code licensed as described in LICENSE.
  *
@@ -14,7 +14,7 @@ namespace Simulator.Bridge
 {
     // name should match bridge plugin name (main C# file, and folder name under External/Bridges folder)
     // this will also be used to display name in UI
-    [BridgeName("Logging")]
+    [BridgeName("Logging", "Logging")]
     public class LoggingBridgeFactory : IBridgeFactory
     {
         // called to create unique instance associated with vehicle
